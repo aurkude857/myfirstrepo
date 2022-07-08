@@ -3,3 +3,21 @@ Welcome to first Git Repository
 This is my first docker file
 
 I have launched Jenkins using docker filr on amazon linux ec2 machine
+
+
+
+FROM amazonlinux:latest
+RUN yum  update -y
+RUN yum install tree -y
+RUN yum install openssh-server -y
+#RUN yum install openssh-client -y
+RUN yum install wget -y
+RUN  wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
+RUN  rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key
+RUN yum  update -y
+RUN  yum install fontconfig java-11-openjdk -y
+RUN  yum install jenkins -y
+CMD  sudo  systemctl start jenkins
+CMD  sudo systemctl enable jenkins
+RUN yum install git -y
+EXPOSE 80
