@@ -5,3 +5,5 @@ hi
 hey
 god
 good bye
+Good morning
+Have a nice day
