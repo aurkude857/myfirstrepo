@@ -4,6 +4,6 @@ Now the job2 will get trigged and folder will get created in testing server
 
 get check again
 
-docker package install
+docker.io package installed
 git package install
 
