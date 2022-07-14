@@ -9,3 +9,4 @@ permission provided
 docker service started
 git package install
 
+trying to run docker file
