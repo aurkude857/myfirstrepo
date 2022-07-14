@@ -4,4 +4,4 @@ Now the job2 will get trigged and folder will get created in testing server
 
 get check again
 
-git install
+docker install
